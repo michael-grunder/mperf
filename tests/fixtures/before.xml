@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<trace-query-result><node xpath="/trace-toc/run[@number='1']/data/table[@schema='time-profile']">
+<schema name="time-profile"><col><mnemonic>weight</mnemonic><engineering-type>weight</engineering-type></col></schema>
+<row><sample-time id="1">100</sample-time><thread id="1" fmt="main (123)"><process id="1" fmt="demo (42)"><pid>42</pid></process></thread><weight id="1" fmt="10 ns">10</weight><backtrace id="1"><frame id="1" name="hot &amp; busy" addr="0x1"><binary id="1" name="demo"/></frame><frame id="2" name="main" addr="0x2"><binary ref="1"/></frame></backtrace></row>
+<row><thread ref="1"/><weight ref="1"/><backtrace ref="1"/></row>
+<row><thread ref="1"/><weight ref="1"/><backtrace id="2"><frame id="3" name="cold" addr="0x3"><binary ref="1"/></frame><frame ref="2"/></backtrace></row>
+<row><thread ref="1"/><weight ref="1"/><backtrace/></row>
+</node></trace-query-result>

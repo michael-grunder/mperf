@@ -4,3 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0"
+clap = { version = "4.6", features = ["derive", "wrap_help"] }
+crossterm = "0.29"
+signal-hook = "0.3"
+nix = { version = "0.31", features = ["signal", "process", "term"] }
+ratatui = { version = "0.30", default-features = false, features = ["crossterm", "unstable-rendered-line-info"] }
+roxmltree = "0.21"
+shlex = "1.3"
+tempfile = "3.27"

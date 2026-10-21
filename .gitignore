@@ -1,1 +1,8 @@
 /target
+
+# Local profiling output
+*.trace/
+*.trace.old/
+*.trace.lock
+.mperf-latest
+.mperf-record-*/

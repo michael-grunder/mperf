@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<trace-query-result><node><schema name="time-profile"/>
+<row><thread id="1" fmt="main (456)"><process id="1" fmt="demo (99)"/></thread><weight id="1">10</weight><backtrace id="1"><frame id="1" name="hot &amp; busy"><binary id="1" name="demo"/></frame><frame id="2" name="main"><binary ref="1"/></frame></backtrace></row>
+<row><thread ref="1"/><weight ref="1"/><backtrace id="2"><frame id="3" name="new work"><binary ref="1"/></frame><frame ref="2"/></backtrace></row>
+</node></trace-query-result>
